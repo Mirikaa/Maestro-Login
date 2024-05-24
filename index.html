@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Maestro's Albums</title>
+    
+  </head>
+  <body>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            background: #1e1e1f;
+            flex-direction: column;
+            margin: 0;
+        }
+        
+        .main {
+            background-color: rgb(205, 169, 222);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            transition: transform 0.2s;
+            width: 500px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #4CAF50;
+        }
+        
+        label {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #555;
+            font-weight: bold;
+        }
+        
+        
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            background-color: #4CAF50;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            </style>
+
+    <div id="authForm">
+        <img src="logo.png" height="50px" width="50px"> 
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue; text-align: center;">MAESTRO's ALBUMS</h1>
+        <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(158, 61, 248);">Welcome Maestro!</h3>
+        <label for="first">Username:</label>
+        <input type="email" placeholder="email" id="userEmail" />
+        <label for="first">Password:</label>
+        <input type="password" placeholder="password" id="userPassword" />
+        <br /><br />
+        <button id="signUpButton">Sign Up</button>
+        <button id="signInButton">Sign In</button>
+      </div>
+
+    <div id="secretContent">
+    <nav style= "background-color:rgb(205, 169, 222)" class="navbar navbar-expand-lg bs-light-bg-subtle">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="" height="100px" width="100px"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue; text-align: center;">MAESTRO'S ALBUMS</h1>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://open.spotify.com/">Spotify</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="signOutButton">Log Out</a>
+        </li>
+     
+      </ul>
+  </div>
+  </div>
+  </nav>
+
+  <br>  </br>
+  <h1 id="works" class="text-center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue; text-align: center;">ALBUMS</h1>
+
+ 
+    <div class="container text-center mt-5">
+    <div class="row">     
+    <div class="col">
+    <div class="card" style="width: 18rem; background-color: rgb(47, 45, 45);">
+        <div class="card-body">
+        <img src="svt.jpg" class="d-block w-100" alt="SVT">
+        <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">SEVENTEEN</h5>
+        <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">SVT Best album '17 is right here'</p>
+        <a href="https://open.spotify.com/album/2Jrp37x38qZqtyrIrfxN4H?si=sDF_MGlvTDKnXfysJcvqCA" class="btn btn-primary">GO TO ALBUM</a>
+        </div>
+        </div>
+        </div>
+
+    <div class="col">
+    <div class="card" style="width: 18rem; background-color: rgb(255, 243, 238);">
+        <div class="card-body">
+        <img src="TXT.jpg" class="d-block w-100" alt="TXT">
+        <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(47, 48, 49);">TOMORROW X TOGETHER</h5>
+        <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(47, 48, 49);">TXT Minisode 3: TOMORROW</p>
+        <a href="https://open.spotify.com/album/0RFuTYmc3LtPHt0rs0Mqwl?si=z-20yZ1vSUqPCiT9CBCuwQ" class="btn btn-primary">GO TO ALBUM</a>
+        </div>
+        </div>
+        </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; background-color: rgb(246, 86, 58);">
+        <div class="card-body">
+        <img src="ENHA.jpg" class="d-block w-100" alt="ENHA">
+        <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">ENHYPEN</h5>
+        <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">ENHYPEN's 'ORANGE BLOOD'</p>
+        <a href="https://open.spotify.com/album/7dsAlxH9cMgyREm8OLdWWT?si=9kZw0bIcST27FljCDxb-1A" class="btn btn-primary">GO TO ALBUM</a>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+  <div class="container text-center mt-5">
+    <div class="row">
+        <div class="col">
+        <div class="col">
+                <div class="card" style="width: 18rem; background-color: rgb(75, 195, 195);">
+                  <div class="card-body">
+                  <img src="NJNS.jpg" class="d-block w-100" alt="NEWJEANS">
+                  <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">NEWJEANS</h5>
+                  <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">NEWJEANS 2nd EP 'Get Up'</p>
+                  <a href="https://open.spotify.com/album/4N1fROq2oeyLGAlQ1C1j18?si=GlEiz6k5R8WBHl8DsGPYDw" class="btn btn-primary">GO TO ALBUM</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+    <div class="col">
+    <div class="col">
+    <div class="card" style="width: 18rem; background-color: rgb(232, 229, 229);">
+                <div class="card-body">
+                   <img src="lsfm.jpg" class="d-block w-100" alt="LSFM">
+                   <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(47, 48, 49);">LE SSERAFIM</h5>
+                   <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(47, 48, 49)">LE SSERAFIM's latest album 'EASY'</p>
+                   <a href="https://open.spotify.com/album/1YCj4PZi08G20y2ekGKY0C?si=z1HiclVvRy6shFarUtz6HQ" class="btn btn-primary">GO TO ALBUM</a>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+    <div class="col">
+    <div class="col">
+    <div class="card" style="width: 18rem; background-color: rgb(77, 79, 76);">
+                <div class="card-body">
+                    <img src="ILLIT.jpg" class="d-block w-100" alt="ILLIT">
+                    <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">ILLIT</h5>
+                    <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">ILLIT's 1st Album 'SUPER REAL ME'</p>
+                    <a href="https://open.spotify.com/album/6irebIc6UO8fN0jl4UlzBS?si=2PIzok9pQ0uiNmSF7wvKZw" class="btn btn-primary">GO TO ALBUM</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+            </div>
+            </div>
+
+  <div class="container text-center mt-5">
+    <div class="row">
+        <div class="col">
+        <div class="col">
+          <div class="card" style="width: 18rem; background-color: rgb(224, 73, 73);">
+            <div class="card-body">
+            <img src="twice.jpg" class="d-block w-100" alt="TWICE">
+            <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">TWICE</h5>
+            <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">TWICE's latest album 'With You-th'</p>
+            <a href="https://open.spotify.com/album/575TQDOQqc0MAheeEeKWUR?si=_w-0HXtCSqODGVPniFhtkw" class="btn btn-primary">GO TO ALBUM</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+ <div class="col">
+    <div class="col">
+        <div class="card" style="width: 18rem; background-color: rgb(27, 27, 27);">
+               <div class="card-body">
+               <img src="RV.jpg" class="d-block w-100" alt="RV">
+               <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">RED VELVET</h5>
+               <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">RED VELVET's 3rd album Chill Kill</p>
+               <a href="https://open.spotify.com/album/4YBKpZhJQXxO7RNjA4V4lY?si=LU17_ntlRS2Pdetzo4WS4Q" class="btn btn-primary">GO TO ALBUM</a>
+               </div>
+               </div>
+               </div>
+               </div>
+
+          <div class="col">
+    <div class="col">
+      <div class="card" style="width: 18rem; background-color: rgb(198, 208, 221);">
+        <div class="card-body">
+        <img src="IDLE.jpg" class="d-block w-100" alt="IDLE">
+        <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(47, 48, 49);">(G)I-DLE</h5>
+        <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(47, 48, 49);">(G)I-DLE's Latest Album '2'</p>
+                <a href="https://open.spotify.com/album/0mC9MXPddkzggVsOXh5gd3?si=vY-97kDLQfq5eUevvigdgw" class="btn btn-primary">GO TO ALBUM</a>
+                </div>
+                </div>
+                </div>
+                </div>
+    </div>
+    </div>
+
+  <div class="container text-center mt-5">
+    <div class="row">
+        <div class="col">
+        <div class="col">
+          <div class="card" style="width: 18rem; background-color: rgb(227, 89, 154);">
+            <div class="card-body">
+            <img src="UNIS.jpg" class="d-block w-100" alt="UNIS">
+            <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">UNIS</h5>
+            <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">UNIS 1st Mini Album 'WE UNIS'</p>
+            <a href="https://open.spotify.com/album/3pix2U5QbFUSwOeF1M9Eim?si=3ClUhTF0TsiTSB_Ei3wx_A" class="btn btn-primary">GO TO ALBUM</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+        <div class="col">
+        <div class="col">
+          <div class="card" style="width: 18rem; background-color: rgb(97, 168, 238);">
+            <div class="card-body">
+            <img src="IVE.jpg" class="d-block w-100" alt="IVE">
+            <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">IVE</h5>
+            <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">IVE's new album 'SWITCH'</p>
+            <a href="https://open.spotify.com/album/7z61DsZtWO2S4nC5xd0b9p?si=zVRgJt40Tmi5jzJavBpHLg" class="btn btn-primary">GO TO ALBUM</a>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+<div class="col">
+        <div class="col">
+          <div class="card" style="width: 18rem; background-color: rgb(200, 30, 30);">
+            <div class="card-body">
+            <img src="BMSTR.jpg" class="d-block w-100" alt="BMSTR">
+            <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">BABYMONSTER</h5>
+            <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;">Latest Album 'BABYMONS7ER'</p>
+            <a href="https://open.spotify.com/album/0eSbsl3j8jz96LC2NCLPc4?si=U0T4SQMNRNyI52iYHdNTBA" class="btn btn-primary">GO TO ALBUM</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+        </div>
+        </div>
+        </div>
+
+        <br></br>
+
+
+    <script type="module">
+      //Update the below URL with the appropriate version if necessary.
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        onAuthStateChanged,
+        signOut,
+        //Update the below URL with the appropriate version if necessary.
+      } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+      // INSERT YOUR FIREBASE CONFIG OBJECT HERE
+      const firebaseConfig = {
+        apiKey: "AIzaSyC9Q0UqXow0NrAJ5Lkh9ch1b_2OhTEzTKg",
+        authDomain: "maestro-login-6c561.firebaseapp.com",
+        projectId: "maestro-login-6c561",
+        storageBucket: "maestro-login-6c561.appspot.com",
+        messagingSenderId: "9633414474",
+        appId: "1:9633414474:web:ebc7e61edf90ef855e7af2",
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      const userEmail = document.querySelector("#userEmail");
+      const userPassword = document.querySelector("#userPassword");
+      const authForm = document.querySelector("#authForm");
+      const secretContent = document.querySelector("#secretContent");
+      const signUpButton = document.querySelector("#signUpButton");
+      const signInButton = document.querySelector("#signInButton");
+      const signOutButton = document.querySelector("#signOutButton");
+
+      secretContent.style.display = "none";
+
+      const userSignUp = async () => {
+        const signUpEmail = userEmail.value;
+        const signUpPassword = userPassword.value;
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            Swal.fire("Your Account is succesfully created!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const userSignIn = async () => {
+        const signInEmail = userEmail.value;
+        const signInPassword = userPassword.value;
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            Swal.fire("You have signed in successfully!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const checkAuthState = async () => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            authForm.style.display = "none";
+            secretContent.style.display = "block";
+          } else {
+            authForm.style.display = "block";
+            secretContent.style.display = "none";
+          }
+        });
+      };
+
+      const userSignOut = async () => {
+        await signOut(auth);
+        Swal.fire("User Logout");
+      };
+
+      /*style.css*/
+
+
+      checkAuthState();
+
+      signUpButton.addEventListener("click", userSignUp);
+      signInButton.addEventListener("click", userSignIn);
+      signOutButton.addEventListener("click", userSignOut);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
